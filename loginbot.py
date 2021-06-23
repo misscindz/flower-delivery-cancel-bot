@@ -38,4 +38,4 @@ finally:
     print("Logging off and closing browser.")
     browser.find_element_by_xpath("/html/body/div[1]/div[1]/div[1]/div[3]/a").click()
     browser.close()
-    print ´("Done :)")
+    print ("Done")
