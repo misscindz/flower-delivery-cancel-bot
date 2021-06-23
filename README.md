@@ -20,7 +20,23 @@ This bot logs into your freddiesflowers.de account and unbooks all active flower
    ```sh
    git clone https://github.com/misscindz/flower-delivery-cancel-bot
    ```
-2. Add credentials to project folder and fill in your freddies flowers login data
-      ```sh
-   echo -e "emailFromConfig = 'USER_NAME'\npasswordFromConfig = 'PASSWORD'" >> credentials.py
+2. Add login credentials to project folder
+   ```sh
+   echo -e "emailFromConfig = 'INSERT_YOUR_EMAIL_HERE'\npasswordFromConfig = 'INSERT_YOUR_PASSWORD_HERE'" >> credentials.py
+   ```
+   Check the output of the generated file
+   ```sh
+   cat credentials.py
+
+   # output should look like this
+   emailFromConfig = 'INSERT_YOUR_EMAIL_HERE'
+   passwordFromConfig = 'INSERT_YOUR_PASSWORD_HERE'
+   ```
+3. Run the bot
+   ```sh
+   # change file permission
+   chmod u+x loginbot.py
+
+   # execute
+   ./loginbot.py
    ```
